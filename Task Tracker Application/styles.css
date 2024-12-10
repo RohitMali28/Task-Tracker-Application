@@ -1,0 +1,298 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.header {
+    background-color: #7fccff;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    text-align: center;
+}
+
+.sidebar {
+    background-color: #868181;
+    color: rgb(15, 14, 14);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.sidebar nav ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar nav ul li {
+    margin-right: 15px;
+}
+
+.sidebar nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+
+.sidebar nav ul li a:hover {
+    background-color: #575757;
+}
+
+/* Main Content Styling */
+.main-content {
+    padding: 20px;
+}
+
+/* Task Section Styling */
+#task-form {
+    display: flex;
+    flex-direction: column;
+    width: 1830px;
+    margin-bottom: 20px;
+}
+
+#task-form input,
+#task-form textarea,
+#task-form button {
+    padding: 10px;
+    margin: 5px 0;
+}
+
+#task-form button {
+    background-color: #a5af4c;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#task-form button:hover {
+    background-color: #b5c900;
+}
+
+.task-column {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.task-card {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.task-actions button {
+    padding: 5px 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.task-actions button:hover {
+    background-color: #ccc;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Calendar container size */
+#calendar {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    font-size: 16px;
+}
+
+/* Table for calendar */
+#calendar table {
+    width: 100%;
+    table-layout: fixed;
+}
+
+/* Header for day names (e.g., Sun, Mon, etc.) */
+#calendar th {
+    text-align: center;
+    padding: 15px;
+    background-color: #f4f4f4;
+    font-size: 18px;
+}
+
+/* Cells for days */
+#calendar td {
+    text-align: center;
+    vertical-align: top;
+    padding: 20px;
+    border: 1px solid #ddd;
+    height: 80px;
+    font-size: 18px;
+}
+
+.task-card {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    position: relative;
+}
+
+.task-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task-menu-button {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 5px;
+    color: #555;
+}
+
+.task-menu-button:hover {
+    color: #000;
+}
+
+.task-actions {
+    margin-top: 10px;
+}
+
+.task-actions button {
+    padding: 5px 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.task-actions button:hover {
+    background-color: #ccc;
+}
+
+/* Style for task markers in the calendar */
+.task-marker {
+    display: block;
+    font-size: 12px;  /* Smaller font for task markers */
+    margin-top: 5px;
+    color: #007BFF;   /* Task marker color */
+    text-align: center;
+}
+
+.selected {
+    background-color: #a7a7a7; /* Highlight color */
+    color: white;
+    font-weight: bold;
+    border-radius: 50%;
+}
+
+/* Styling for the selected date */
+.selected-date {
+    background-color: lightblue; /* Visual indicator for the selected date */
+    color: white;
+    font-weight: bold;
+    border-radius: 50%;
+    font-size: 1.2em; /* Increase font size for better visibility */
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center;      /* Center content vertically */
+    grid-row: 2; /* Places the selected date in the second row */
+    grid-column: 4; /* Adjust to place it in the middle of the calendar (top middle) */
+}
+
+#calendar-navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+#calendar-navigation button {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#calendar-navigation button:hover {
+    background-color: #ddd;
+}
+
+/* Style for task filter section */
+#task-filter-section {
+    margin-bottom: 20px;
+}
+
+/* Style for input and select elements */
+#task-search, #task-filter, #date-search {
+    margin-right: 10px;
+    padding: 5px;
+    font-size: 14px;
+}
+
+/* Style for task cards */
+.task-card {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 5px;
+    background-color: #f9f9f9;
+}
+
+/* Container for tasks */
+#task-container {
+    margin-top: 20px;
+}
+
+#deleted-tasks-container {
+    margin-top: 20px;
+}
+
+.deleted-task-card {
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.deleted-task-actions button {
+    padding: 5px 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.deleted-task-actions button:hover {
+    background-color: #ccc;
+}
+
+/* Style for Notifications */
+#notifications-container {
+    margin-top: 20px;
+}
+
+.notification {
+    background-color: #ffcccc;
+    color: #d8000c;
+    border: 1px solid #d8000c;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+.notification.upcoming {
+    background-color: #ffeb3b;
+    color: #5d4001;
+    border: 1px solid #ffeb3b;
+}
+
+.notification.overdue {
+    background-color: #f44336;
+    color: white;
+    border: 1px solid #f44336;
+}
